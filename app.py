@@ -5,7 +5,9 @@ import os
 
 app = Flask(__name__)
 
-os.makedirs("output", exist_ok=True)
+if not os.path.exists("output"):
+    os.makedirs("output")
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -50,4 +52,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
