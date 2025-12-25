@@ -26,7 +26,7 @@ def index():
         draw = ImageDraw.Draw(background)
 
         # Font
-        font_path = r"C:\Windows\Fonts\Arial.ttf"
+        font_path = r"https://github.com/Amankumar0996/quote-to-image/blob/main/fonts/Arial.ttf"
         font = ImageFont.truetype(font_path, font_size)
 
         # Wrap text
@@ -52,5 +52,6 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
