@@ -24,7 +24,7 @@ def index():
         draw = ImageDraw.Draw(background)
 
         # Font
-        font_path = r"C:\Windows\Fonts\arial.ttf"
+        font_path = r"C:\Windows\Fonts\Arial.ttf"
         font = ImageFont.truetype(font_path, font_size)
 
         # Wrap text
@@ -50,3 +50,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
